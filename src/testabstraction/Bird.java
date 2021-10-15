@@ -1,6 +1,6 @@
 package testabstraction;
 
-public class Bird extends Animal{
+public class Bird extends Animal implements BirdAction{
     private double wingLength;
     public Bird(){
 
@@ -9,8 +9,9 @@ public class Bird extends Animal{
         super(chirp);
         this.wingLength = wingLength;
     }
+
     @Override
-    public void animalAction() {
+    public void fly() {
         System.out.println("Fly");
     }
 }

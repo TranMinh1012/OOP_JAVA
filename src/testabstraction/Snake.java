@@ -1,6 +1,6 @@
 package testabstraction;
 
-public class Snake extends Animal{
+public class Snake extends Animal implements SnakeAction{
     private double length;
     public Snake(){
 
@@ -9,8 +9,9 @@ public class Snake extends Animal{
         super(chirp);
         this.length = length;
     }
+
     @Override
-    public void animalAction() {
+    public void crawl() {
         System.out.println("Crawl");
     }
 }

@@ -3,10 +3,10 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Dog myDog = new Dog();
-        myDog.animalAction();
+        myDog.bark();
         Bird myBird = new Bird();
-        myBird.animalAction();
+        myBird.fly();
         Snake mySnake = new Snake();
-        mySnake.animalAction();
+        mySnake.crawl();
     }
 }

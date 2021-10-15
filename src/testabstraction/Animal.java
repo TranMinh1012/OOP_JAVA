@@ -9,5 +9,4 @@ public abstract class Animal {
     public Animal(String chirp){
         this.chirp = chirp;
     }
-    public abstract void animalAction();
 }

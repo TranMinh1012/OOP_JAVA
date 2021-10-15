@@ -1,6 +1,6 @@
 package testabstraction;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements DogAction{
     private String featherColor;
     public Dog(){
 
@@ -9,8 +9,9 @@ public class Dog extends Animal{
         super(chirp);
         this.featherColor = featherColor;
     }
+
     @Override
-    public void animalAction() {
+    public void bark() {
         System.out.println("Bark");
     }
 }
